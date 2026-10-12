@@ -1,0 +1,25 @@
+# Pipeline output - regenerated on every run, and may contain scraped text
+*.csv
+one_pipe_quality_report.json
+output/
+.n8n-files/
+
+# Secrets and local n8n state - never commit these
+.env
+.env.*
+*.pem
+*.key
+credentials*.json
+.n8n/
+database.sqlite
+
+# Editor and OS clutter
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Tooling
+node_modules/
+*.log

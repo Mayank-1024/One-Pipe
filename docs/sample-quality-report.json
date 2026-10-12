@@ -1,0 +1,90 @@
+{
+  "report_generated_at": "2026-10-02T18:24:32.066Z",
+  "project": "One Pipe – multi-source data pipeline",
+  "sources_attempted": 6,
+  "sources_available": 6,
+  "unavailable_sources": [],
+  "raw_records_collected": 295,
+  "records_removed": 10,
+  "removed_breakdown": {
+    "missing_essentials": 0,
+    "invalid_date": 0,
+    "duplicates": 10
+  },
+  "clean_records": 285,
+  "complete_records": 269,
+  "quality_rate_pct": 94.4,
+  "essentials_check": {
+    "title_present_pct": 100,
+    "date_present_pct": 100,
+    "source_present_pct": 100,
+    "dates_in_yyyy_mm_dd_pct": 100
+  },
+  "per_source": [
+    {
+      "source_name": "HuggingFace: jaykin01/advertisement-copy",
+      "status": "ok",
+      "message": "Loaded 100 rows",
+      "records_received": 100,
+      "records_kept": 90,
+      "complete_records": 74,
+      "completeness_pct": 82.2,
+      "date_range": "2023-09-25 to 2023-09-25"
+    },
+    {
+      "source_name": "HuggingFace: federicomoreno/marketing-campaign-performance-200k",
+      "status": "ok",
+      "message": "Loaded 100 rows",
+      "records_received": 100,
+      "records_kept": 100,
+      "complete_records": 100,
+      "completeness_pct": 100,
+      "date_range": "2021-01-01 to 2021-04-10"
+    },
+    {
+      "source_name": "RSS: MarTech (martech.org)",
+      "status": "ok",
+      "message": "Loaded 10 articles",
+      "records_received": 10,
+      "records_kept": 10,
+      "complete_records": 10,
+      "completeness_pct": 100,
+      "date_range": "2026-09-30 to 2026-10-02"
+    },
+    {
+      "source_name": "RSS: Marketing Dive",
+      "status": "ok",
+      "message": "Loaded 10 articles",
+      "records_received": 10,
+      "records_kept": 10,
+      "complete_records": 10,
+      "completeness_pct": 100,
+      "date_range": "2026-09-29 to 2026-10-02"
+    },
+    {
+      "source_name": "RSS: HubSpot Marketing Blog",
+      "status": "ok",
+      "message": "Loaded 50 articles",
+      "records_received": 50,
+      "records_kept": 50,
+      "complete_records": 50,
+      "completeness_pct": 100,
+      "date_range": "2026-07-22 to 2026-10-02"
+    },
+    {
+      "source_name": "RSS: Social Media Examiner",
+      "status": "ok",
+      "message": "Loaded 25 articles",
+      "records_received": 25,
+      "records_kept": 25,
+      "complete_records": 25,
+      "completeness_pct": 100,
+      "date_range": "2026-08-20 to 2026-10-01"
+    }
+  ],
+  "quality_flag_counts": {
+    "date_from_dataset_release": 90,
+    "missing_cta": 16,
+    "body_from_product_description": 10
+  }
+}
