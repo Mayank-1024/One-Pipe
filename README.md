@@ -82,6 +82,16 @@ Every HTTP and RSS node retries 3 times, 2 seconds apart, and continues on error
 
 **Version note:** built and tested on a self-hosted n8n with Schedule Trigger 1.3, HTTP Request 4.2, RSS Read 1.2, Merge 3.2 and Code 2.
 
+## n8n template version
+
+[`workflow/one-pipe-n8n-template.json`](workflow/one-pipe-n8n-template.json) is the shareable version submitted to the n8n Creator Portal as *Combine RSS feeds and Hugging Face datasets into a quality-checked CSV*:
+
+- Dataset names, the row window and feed URLs live in one **Set Source Configuration** node, so they can be changed without editing code.
+- The write-to-disk nodes are removed, since n8n Cloud can't write files. Download the CSV and report from the **Export to CSV File** and **Export Report to JSON File** nodes, or connect a Google Drive or Sheets node after them.
+- Every node is renamed to describe its step, and sticky notes explain each stage and the setup.
+
+Import it the same way as the main workflow. It needs no credentials.
+
 ## Point it at a different source
 
 Only stage ① and the matching Map node change. Stages ③ and ④ stay as they are.
